@@ -84,13 +84,51 @@ public class SSW3sDatatype {
                 System.out.println(first == 15);
                 System.out.println( first >= second );*/
 
-                int first = 35;
+                /*int first = 35;
                 int second = 20;
                    if (first >= second) {
                     System.out.println("Much bigger!");
                    } else {
                     System.out.println("Noooo");
-                   }
+                   }*/
+                
+                /*if ( 20 > 18){
+                    System.out.println("20 is greater than 18");
+                }
+
+                int first = 20;
+                int second = 18;
+                if (first > second) {
+                    System.out.println("first is bigger thn second");
+                } */
+
+                /*int first = 20;
+                if(first < 10) {
+                    System.out.println("first is smaller than 20");
+                } else {
+                    System.out.println("first is bigger than 10");
+                }
+                // 위의 if...else문을 String을 사용하여 한 문장으로 줄일 수 있다
+                String answer = (first < 18) ? "Yes, is true" : "No, it flase";
+                System.out.println(answer);*/
+
+
+
+                /*int first = 22;
+                if (first < 10) {
+                    System.out.println("first is smaller thsn 10");
+                } else if (first < 18) {
+                    System.out.println("first is smaller than 18");
+                } else {
+                    System.out.println("first is bigger than 18");
+                }*/
+
+                // Java While loop
+                int first = 0;
+                while (first < 5) {
+                    System.out.println(first);
+                    first++;
+                }
                    
 
 
