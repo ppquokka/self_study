@@ -10,6 +10,8 @@ public class SS_BJ1001 {
     public static void main(String[] args) {
         try {
             Scanner scanner = new Scanner(System.in);
+            // Scanner 객체명 = new Scanner(System.in);
+            // 보통 가장 많이 쓰는 객체명으로 in, scan, sc
             int A = 0;
             int B = 0;
             int sum = A-B;
