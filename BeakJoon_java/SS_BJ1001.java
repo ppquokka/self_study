@@ -4,7 +4,7 @@ package BeakJoon_java;
  * 입력: 첫째 줄에 A,B주어짐 (0<A, B<10)
  * 출력: 첫째 출에  A-B 출력
 */
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class SS_BJ1001 {      
     public static void main(String[] args) {
@@ -14,8 +14,28 @@ public class SS_BJ1001 {
             // 보통 가장 많이 쓰는 객체명으로 in, scan, sc
             int A = 0;
             int B = 0;
-            int sum = A-B;
-            System.out.println(sum);  
+
+            System.out.println(A-B);  
+            
+            scanner.close();
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        // return 0;
+    }
+}*/
+
+import java.util.Scanner;
+
+public class SS_BJ1001 {      
+    public static void main(String[] args) {
+        try {
+            Scanner scanner = new Scanner(System.in);
+            int A = scanner.nextInt();
+            int B = scanner.nextInt();
+
+            System.out.println(A-B);  
             
             scanner.close();
             
@@ -25,3 +45,4 @@ public class SS_BJ1001 {
         // return 0;
     }
 }
+
