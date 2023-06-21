@@ -30,3 +30,16 @@ SELECT ANIMAL_ID, NAME, DATETIME
 FROM ANIMAL_INS
 ORDER BY NAME ASC, DATETIME DESC
 ;
+
+/*
+Lv.1  .상위 n개 레코드
+*/
+SELECT NAME
+FROM ANIMAL_INS
+ORDER BY DATETIME ASC 
+LIMIT 1          
+;
+
+ /* SQL selet top
+  * 맨 위 1개만 보고싶다!!
+  */
