@@ -9,37 +9,47 @@ ORDER BY ANIMAL_ID                   -- 정렬 기준 선택
 ;
 
 
-/*
-Lv.1   5번.이름이 없는 동물의 아이디 
-*/
+
+/*Lv.1   5번.이름이 없는 동물의 아이디 */
 SELECT ANIMAL_ID
 FROM ANIMAL_INS
 WHERE NAME is NULL            -- = 가 아니라 is
 ORDER BY ANIMAL_ID
 ;
-
 -- ASC, ORDER BY는 기본으로: 오름차순  /  DESC: 내림차순
 
 
 
-/*
-Lv.1  7번.여러 기준으로 정렬하기
-*/
-
+/*Lv.1  7번.여러 기준으로 정렬하기*/
 SELECT ANIMAL_ID, NAME, DATETIME
 FROM ANIMAL_INS
 ORDER BY NAME ASC, DATETIME DESC
 ;
 
-/*
-Lv.1  .상위 n개 레코드
-*/
+
+
+/*Lv.1  .상위 n개 레코드*/
 SELECT NAME
 FROM ANIMAL_INS
 ORDER BY DATETIME ASC 
 LIMIT 1          
 ;
+ -- SQL selet top. 맨 위 1개만 보고싶다!!
 
- /* SQL selet top
-  * 맨 위 1개만 보고싶다!!
-  */
+
+
+ /*Lv.1  이름이 있는 동물의 아이디*/
+SELECT ANIMAL_ID
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
+ORDER BY ANIMAL_ID ASC 
+;
+ -- 이름이 있는 동물의 ID는 not null이어야 한다
+
+
+ /**/
+
+
+ -- 
+
+
