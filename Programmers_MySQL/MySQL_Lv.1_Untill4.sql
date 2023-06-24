@@ -60,3 +60,34 @@ FROM ANIMAL_INS
  -- 한 문제에 풀이는 여러개. 그래도 짧은게 좋지!
 
 
+ /*Lv.1  최솟값 구하기(SUM, MAX, MIN)*/
+SELECT MIN(DATETIME) AS 시간
+FROM ANIMAL_INS
+;
+
+SELECT DATETIME AS 시간
+FROM ANIMAL_INS
+ORDER BY DATETIME ASC
+LIMIT 1
+;
+-- 내가 작성 할 수 있는 방법으로 다 해보기
+
+
+/*Lv.1  동물 수 구하기(SUM, MAX, MIN)*/
+SELECT COUNT(ANIMAL_ID)
+FROM ANIMAL_INS
+;
+
+
+/*Lv.1  중복 제거하기(SUM, MAX, MIN)*/
+SELECT COUNT(DISTINCT NAME) AS COUNT
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL
+;
+-- 중복 제거: DISTINCT
+-- Inside the table, a column often contains many duplicate values;
+--  and sometimes you only want to list the different (distinct) values.
+-- SELECT DISTINCT column1, column2, ...
+-- FROM table_name;
+
+
