@@ -1,3 +1,4 @@
+package W3School.QuestAnswerSelfStudy;
 public class SSBasicStructure {
         public static void main(String[] args) {
             

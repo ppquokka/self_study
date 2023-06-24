@@ -1,3 +1,4 @@
+package W3School.QuestAnswerSelfStudy;
 public class SSForLoop {
         public static void main(String[] args) {
             

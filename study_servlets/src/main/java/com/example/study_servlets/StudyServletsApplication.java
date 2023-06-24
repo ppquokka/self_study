@@ -1,4 +1,4 @@
-package com.example.study_servlets;
+package study_servlets.src.main.java.com.example.study_servlets;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

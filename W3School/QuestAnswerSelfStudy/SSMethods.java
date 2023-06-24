@@ -1,4 +1,4 @@
-package QuestAnswerSelfStudy;
+package W3School.QuestAnswerSelfStudy;
 
 // 강사님 픽 정답(복붙해옴) 이해해보기
 public class SSMethods {

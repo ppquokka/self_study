@@ -47,9 +47,16 @@ ORDER BY ANIMAL_ID ASC
  -- 이름이 있는 동물의 ID는 not null이어야 한다
 
 
- /**/
+ /*(23.06.24)
+  Lv.1  최댓값 구하기(SUM, MAX, MIN)*/
+SELECT DATETIME
+FROM ANIMAL_INS
+ORDER BY DATETIME DESC
+LIMIT 1;
 
-
- -- 
+SELECT MAX(DATETIME) AS 시간
+FROM ANIMAL_INS
+;
+ -- 한 문제에 풀이는 여러개. 그래도 짧은게 좋지!
 
 
