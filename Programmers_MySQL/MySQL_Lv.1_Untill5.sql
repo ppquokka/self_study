@@ -10,3 +10,12 @@ ORDER BY FACTORY_ID ASC
 -- pattern: 'ㄱ%', '%ㄱ', '%ㅈㅌ%', '_ㄷ%', 'ㄱ_%', 'ㄱ__%', 'ㄱ%ㅂ'
 -- ㄱ으로 시작, ㄱ으로 끝남, 중간에 ㅈㅌ이 있으면, 두번째가 ㄷ으로 시작
 -- 세번째가 ㄱ으로 시작
+
+
+/*Lv.1 : 경기도에 위치한 식품창고 목록 출력하기 */
+SELECT WAREHOUSE_ID, WAREHOUSE_NAME, ADDRESS, COALESC(FREEZER_YN, 'N') AS FREEZER_YN 
+FROM FOOD_WAREHOUSE
+WHERE ADDRESS LIKE '경기도%' 
+ORDER BY WAREHOUSE_ID ASC;
+
+-- 틀림
