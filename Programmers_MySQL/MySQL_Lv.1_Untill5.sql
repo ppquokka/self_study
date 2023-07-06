@@ -30,4 +30,4 @@ SELECT COUNT (*) AS USERS
 FROM USER_INFO
 where AGE is NULL
 ;
---  
+--  COUNT(*)는 NULL 값을 포함한다. COUNT(AGE)는 NULL 값을 포함하지 않는다.
