@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <style>
+        /* 헤더 우측 정렬 */
+        header {
+            text-align: right;
+        }
+
+        /* 헤더와 메인에 배경색 적용 */
+        header,
+        main {
+            background-color: #b3d9eb;
+        }
+
+        /* 메뉴 위아래 흰색 줄 */
+        nav ul li {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+
+        /* 맨 오른쪽 'My Diary' 둥근 사각형 테두리 */
+        nav ul li:last-child {
+            border-radius: 20px;
+            border: 1px solid #fff;
+        }
+
+        /* 푸터 흰색 배경화면, 글씨 가운데 정렬 */
+        footer {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* 수정 사항 추가 */
+        .community {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .input-group {
+            border-radius: 20px;
+        }
+
+        .list-unstyled>.list-unstyled {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+
+        .paging {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .direction {
+            margin: 0 5px;
+        }
+
+        .direction.first::before,
+        .direction.last::after {
+            content: "";
+        }
+    </style>
+
+    <title>Community</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- My Page -->
+        <a href="#" style="color: white; text-decoration: none; font-size: 1.1rem;">마이 페이지</a>
+    </header>
+    <main>
+        <div style="text-align: center;">
+            <ul class="list-unstyled m-25" style="display: inline-block;">
+                <li style="display: inline-block; float: left;">
+                    <a href="#">
+                        <img src="./images/logoimage.png" alt="logo image" width="70" height="70">
+                        <hr>
+                    </a>
+                    <div style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+                        <ul class="list-unstyled m-0" style="display: inline-block;">
+                            <li style="display: inline-block;">
+                                <a href="" class="text-white text-decoration-none ps-3" style="font-size: 1.3rem;">
+                                    사이트 소개</a>
+                            </li>
+                            <li style="display: inline-block;">
+                                <a href="" class="text-white text-decoration-none ps-3" style="font-size: 1.3rem;">
+                                    다이어리 사용 안내</a>
+                            </li>
+                            <li style="display: inline-block;">
+                                <a href="" class="text-white text-decoration-none ps-3" style="font-size: 1.3rem;">
+                                    커뮤니티</a>
+                            </li>
+                            <li style="display: inline-block;">
+                                <a href="" class="text-white text-decoration-none ps-3" style="font-size: 1.3rem;">
+                                    펫 다이어리</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="community main">
+            <div class="container mt-4">
+                <div class="col-md-8">
+                    <h3 class="tit">커뮤니티 게시판</h3>
+                    <p>반려동물 자랑, 병원, 사료 문의 등 자유로운 공간입니다 😄</p>
+                    <div class="input-group mb-3">
+                        <input type="text" title="검색어 입력" class="form-control rounded-pill" placeholder="" value=""
+                            id="keydownEnter" maxlength="100">
+                        <button class="btn btn-primary" type="button" onclick="communityTableBody()">
+                            <img src="./images/search.png" alt="search image" width="23" height="23">
+                        </button>
+                    </div>
+                    <div class="Community_main">
+                        <h2></h2>
+                        <table class="table">
+                            <thead style="text-align: center;">
+                                <tr>
+                                    <th class="noBrd">No</th>
+                                    <th class="noBrd">분류</th>
+                                    <th class="noBrd">제목</th>
+                                    <th class="noBrd">작성자</th>
+                                    <th class="noBrd">작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody id="communityTableBody">
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>자랑</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">꽃챌린지</a>
+                                        </td>
+                                        <td>ba****</td>
+                                        <td>2023-05-10</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>2</td>
+                                        <td>병원</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">신도림역 근처 괜찮은 고양이 병원 있을까요?</a>
+                                        </td>
+                                        <td>ap***</td>
+                                        <td>2023-05-15</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>3</td>
+                                        <td>병원</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">여의도역 근처에 고슴도치 진료하는 병원 있을까요?</a>
+                                        </td>
+                                        <td>or****</td>
+                                        <td>2023-06-02</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>4</td>
+                                        <td>사료/간식</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">강아지 사료 추천받아요</a>
+                                        </td>
+                                        <td>pi*****</td>
+                                        <td>2023-06-10</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>5</td>
+                                        <td>자랑</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">물속성 고양이</a>
+                                        </td>
+                                        <td>be****</td>
+                                        <td>2023-06-16</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>6</td>
+                                        <td>기타</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">펫박람회 추천템!!</a>
+                                        </td>
+                                        <td>on****</td>
+                                        <td>2023-06-16</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>7</td>
+                                        <td>사료/간식</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">앵무새 간식은 뭐가 좋을까요?</a>
+                                        </td>
+                                        <td>an*****</td>
+                                        <td>2023-06-20</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>8</td>
+                                        <td>병원</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">홍제역 근처에 유기동물 케어해주는 병원이 있을까요?</a>
+                                        </td>
+                                        <td>sa***</td>
+                                        <td>2023-06-24</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>9</td>
+                                        <td>자랑</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">취미로 수제간식 만들기</a>
+                                        </td>
+                                        <td>co****</td>
+                                        <td>2023-06-29</td>
+                                    </tr>
+                                </form>
+                                <form>
+                                    <input type="hidden" name="COMMUNITY_PETTALK_ID" value="" id="">
+                                    <tr>
+                                        <td>10</td>
+                                        <td>기타</td>
+                                        <td class="subject">
+                                            <a href="../static/testmain.html">제가 잘때 토끼가 자꾸 머리카락을 먹는데 어떻게해야...??</a>
+                                        </td>
+                                        <td>ra****</td>
+                                        <td>2023-07-03</td>
+                                    </tr>
+                                </form>
+                            </tbody>
+                        </table>
+                        <div class="paging">
+                            <a href="/Community/PetTalk/List?page=1" class="direction first">
+                                <img src="./images/left-arrow.png" alt="previous page" width="20" height="20">
+                            </a>
+                            <a href="#" class="direction prev">
+                                <img src="./images/left-arrow.png" alt="previous page" width="20" height="20">
+                            </a>
+                            <a href="#" class="on">1</a>
+                            <a href="/Community/PetTalk/List?page=2">2</a>
+                            <a href="/Community/PetTalk/List?page=3">3</a>
+                            <a href="/Community/PetTalk/List?page=11" class="direction next">
+                                <img src="./images/right-arrow.png" alt="next page" width="20" height="20">
+                            </a>
+                            <a href="/Community/PetTalk/List?page=68" class="direction last">
+                                <img src="./images/right-arrow.png" alt="next page" width="20" height="20">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="p-5 d-flex justify-content-between align-items-center">
+        <div class="row">
+            <div class="">
+                <div class="">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a href="" class="text-black text-decoration-none ps-2">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-black text-decoration-none ps-2">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-black text-decoration-none ps-2">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="" class="text-black text-decoration-none ps-2">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <ul class="list-unstyled m-0">
+                        <li class="pt-1">
+                            대표번호: 080-123-4567 (업무시간: 09:00-18:00 월~금) 주말 및 공휴일 휴무
+                        </li>
+                        <li class="pt-1">
+                            <span class="pe-3">대표자: THE GLORY</span>
+                            <span>주소: 서울시 구로구</span>
+                        </li>
+                        <li class="pt-1">
+                            <span>법인명: (주)THE GLORY</span>
+                            <span>사업자 등록정보: 123-45-6789</span>
+                        </li>
+                        <li class="pt-1">
+                            <span>호스팅: (주)THE GLORY</span>
+                            <span>E-MAIL: THE GLORY@THE GLORY.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <img src="./images/logoimage.png" alt="logo" height="120rem" />
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
