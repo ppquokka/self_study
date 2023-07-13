@@ -1,0 +1,1357 @@
+<div id="wrap">
+    <div id="header" role="banner">
+        <div id="topSearchWrap" class="header_inner">
+            <div id="special-logo" class="search_special_bg"></div>
+            <div id="timeboard-ex" class="ad_area" style="min-width: 1340px; display: none;"> </div>
+            <div id="search_area" class="search_area">
+                <div id="special-input-logo-ex" class="link_search_special" style="display:none"></div>
+                <div class="search_group">
+                    <div id="search" class="search_group_inner">
+                        <h1 id="special-input-logo" class="search_logo">
+                            <a href="/" class="link_naver type_motion_hat is_fadeout">
+                                <img src="https://s.pstatic.net/static/www/mobile/edit/20230516_0/upload_1684217675277OZzsu.gif"
+                                    width="58" height="58" alt="NAVER">
+                            </a>
+                            <a href="/" class="link_naver type_motion_n is_fadein">
+                                <span class="ico_n_logo_svg">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.273 12.845 7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="blind">NAVER</span>
+                            </a>
+                        </h1>
+                        <form id="sform" name="search" role="search" action="https://search.naver.com/search.naver"
+                            method="get">
+                            <fieldset>
+                                <legend class="blind">검색</legend>
+                                <input type="hidden" name="where" value="nexearch">
+                                <input type="hidden" id="sm" name="sm" value="top_hty">
+                                <input type="hidden" id="fbm" name="fbm" value="0">
+                                <input type="hidden" id="acr" name="acr" value="" disabled="disabled">
+                                <input type="hidden" id="acq" name="acq" value="" disabled="disabled">
+                                <input type="hidden" id="qdt" name="qdt" value="" disabled="disabled">
+                                <input type="hidden" id="ie" name="ie" value="utf8">
+                                <input type="hidden" id="acir" name="acir" value="" disabled="disabled">
+                                <input type="hidden" id="os" name="os" value="" disabled="disabled">
+                                <input type="hidden" id="bid" name="bid" value="" disabled="disabled">
+                                <input type="hidden" id="pkid" name="pkid" value="" disabled="disabled">
+                                <input type="hidden" id="eid" name="eid" value="" disabled="disabled">
+                                <input type="hidden" id="mra" name="mra" value="" disabled="disabled">
+                                <div class="search_input_box">
+                                    <input id="query" name="query" type="search" title="검색어를 입력해 주세요."
+                                        placeholder="검색어를 입력해 주세요." maxlength="255" autocomplete="off"
+                                        class="search_input" data-atcmp-element="">
+                                </div>
+                                <button type="submit" class="btn_search"
+                                    onclick="window.nclk_v2(this,&quot;sch.action&quot;)">
+                                    <span id="search-btn" class="ico_btn_search">
+                                    </span>
+                                    <span class="blind">검색</span>
+                                </button>
+                            </fieldset>
+                        </form>
+                        <div class="search_box">
+                            <button id="ke_kbd_btn" type="button" class="btn_keyboard" aria-pressed="false">
+                                <span class="keybord_text">
+                                    <span class="blind">입력도구</span>
+                                </span>
+                            </button>
+                            <div id="_nx_kbd" style="display:none"></div>
+                            <button id="nautocomplete" type="button" class="btn_arrow fold" data-atcmp-element=""
+                                aria-pressed="false">
+                                <span class="blind">자동완성/최근검색어펼치기</span>
+                            </button>
+                        </div>
+                        <div class="layer_atcmp" id="autoFrame" style="display:none">
+                            <div class="ly_atcmp" data-atcmp-element="">
+                                <div class="api_atcmp_wrap">
+                                    <div class="atcmp_fixer _recent_layer" style="display:none">
+                                        <div class="atcmp_header _recent_header">
+                                            <strong class="tit">최근검색어</strong>
+                                            <div class="option">
+                                                <a role="button" href="#" class="item _delAll"
+                                                    aria-pressed="false">전체삭제</a>
+                                            </div>
+                                        </div>
+                                        <div class="atcmp_container">
+                                            <ul class="kwd_lst _recent">
+                                                <li class="item _item" data-rank="@rank@" data-template-type="history"
+                                                    data-keyword="@in_txt@">
+                                                    <a href="#" class="kwd"> <span class="fix">
+                                                            <span class="common_ico_kwd">
+                                                                <i class="imsc ico_search"></i>
+                                                            </span>
+                                                            <span>@txt@</span>
+                                                        </span>
+                                                    </a>
+                                                    <span class="etc">
+                                                        <em class="date">@date@.</em>
+                                                        <a href="#" role="button" class="bt_item _del"
+                                                            aria-pressed="false">
+                                                            <i class="imsc ico_del">삭제</i>
+                                                        </a>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <div class="kwd_info kwd_off _offMsg" style="display:none">
+                                                검색어 저장 기능이 꺼져 있습니다.
+                                                <br>
+                                                <span class="kwd_dsc">
+                                                    설정이 초기화 된다면
+                                                    <a href="https://help.naver.com/support/alias/search/word/word_29.naver"
+                                                        class="kwd_help" data-clk="sly.help" target="_blank">도움말</a>을
+                                                    확인해주세요.
+                                                </span>
+                                            </div>
+                                            <div class="kwd_info kwd_none _recentNone" style="display:none">
+                                                최근 검색어 내역이 없습니다.
+                                                <br>
+                                                <span class="kwd_dsc">
+                                                    설정이 초기화 된다면
+                                                    <a href="https://help.naver.com/support/alias/search/word/word_29.naver"
+                                                        class="kwd_help" data-clk="sly.help" target="_blank">도움말</a>을
+                                                    확인해주세요.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="atcmp_footer">
+                                            <span class="side_opt_area">
+                                                <span class="opt_item">
+                                                    <a href="https://help.naver.com/support/service/main.help?serviceNo=605&amp;categoryNo=1991"
+                                                        data-clk="sly.help" target="_blank">도움말
+                                                    </a>
+                                                </span>
+                                            </span>
+                                            <span class="rside_opt_area">
+                                                <span class="opt_item">
+                                                    <a href="#" class="close _keywordOnOff">자동저장 끄기</a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="atcmp_fixer _atcmp_layer" style="display:none">
+                                        <div class="atcmp_container _words">
+                                            <ul class="kwd_lst _kwd_list"> </ul>
+                                            <div class="atcmp_alert _alert">
+                                                <div class="dsc_election">
+                                                    <p class="dsc">
+                                                        <i class="imsc ico_election"></i>
+                                                        <span class="_alert_passage"></span>
+                                                    </p>
+                                                    <span class="dsc_inner">
+                                                        <span class="_alert_passage2"></span>
+                                                        <a href="#" class="link _alert_link" target="_blank">자세히보기</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="atcmp_plus _plus">
+                                                <div class="dsc_plus">
+                                                    <a href="https://help.naver.com/support/alias/search/word/word_16.naver"
+                                                        class="link_dsc" data-clk="sug.cxhelp" target="_blank">관심사를 반영한
+                                                        컨텍스트 자동완성
+                                                        <i class="imsc ico_help">도움말</i>
+                                                    </a>
+                                                </div>
+                                                <div class="switch">
+                                                    <a role="button" href="#" class="bt_switch active _plus_btn"
+                                                        aria-pressed="false">
+                                                        <i class="imsc ico_option">컨텍스트 자동완성</i>
+                                                    </a>
+                                                </div>
+                                                <div class="layer_plus _plus_layer">
+                                                    <strong class="tit">컨텍스트 자동완성</strong>
+                                                    <div class="_plus_layer_isloggedin" style="display:none">
+                                                        <p class="dsc">
+                                                            ON/OFF 설정은
+                                                            <br>
+                                                            해당기기(브라우저)에 저장됩니다.
+                                                        </p>
+                                                        <div class="btn_area">
+                                                            <a href="https://help.naver.com/support/alias/search/word/word_16.naver"
+                                                                class="btn btn_view" data-clk="sug.cxlink"
+                                                                target="_blank">자세히</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="_plus_layer_isnotloggedin" style="display:none">
+                                                        <p class="dsc">
+                                                            <em class="txt">동일한 시간대/연령/남녀별</em>
+                                                            사용자 그룹의
+                                                            <br>
+                                                            관심사에 맞춰 자동완성을 제공합니다.
+                                                        </p>
+                                                        <div class="btn_area">
+                                                            <a href="https://nid.naver.com/nidlogin.login"
+                                                                class="btn btn_login" data-clk="sug.cxlogin">로그인</a>
+                                                            <a href="https://help.naver.com/support/alias/search/word/word_16.naver"
+                                                                class="btn btn_view" data-clk="sug.cxlink"
+                                                                target="_blank">자세히</a>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" role="button" class="btn_close _plus_layer_close">
+                                                        <i class="imsc ico_close">컨텍스트 자동완성 레이어 닫기</i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="atcmp_footer">
+                                            <span class="side_opt_area">
+                                                <span class="opt_item">
+                                                    <a href="https://help.naver.com/support/service/main.help?serviceNo=605&amp;categoryNo=1987"
+                                                        data-clk="sug.help" target="_blank">도움말</a>
+                                                </span>
+                                                <span class="opt_item">
+                                                    <a href="https://help.naver.com/support/contents/contents.help?serviceNo=605&amp;categoryNo=18215"
+                                                        class="report" data-clk="sug.report" target="_blank">신고</a>
+                                                </span>
+                                            </span>
+                                            <span class="rside_opt_area">
+                                                <span class="opt_item">
+                                                    <a href="#" class="close _suggestOnOff">자동완성 끄기</a>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="search-right-banner"></div>
+            <div id="shortcutArea" class="shortcut_area" role="region">
+                <ul class="shortcut_list">
+                    <li class="shortcut_item">
+                        <a href="https://mail.naver.com" class="link_service" target="_blank">
+                            <span class="service_icon type_mail">
+                            </span>
+                            <span class="service_name">메일</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://cafe.naver.com" class="link_service" target="_blank">
+                            <span class="service_icon type_cafe"></span>
+                            <span class="service_name">카페</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://blog.naver.com" class="link_service" target="_blank">
+                            <span class="service_icon type_blog"></span>
+                            <span class="service_name">블로그</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://shopping.naver.com/home" class="link_service" target="_blank">
+                            <span class="service_icon type_shopping"></span>
+                            <span class="service_name">쇼핑</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://news.naver.com/" class="link_service" target="_blank">
+                            <span class="service_icon type_news"></span>
+                            <span class="service_name">뉴스</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://finance.naver.com/" class="link_service" target="_blank">
+                            <span class="service_icon type_stock"></span>
+                            <span class="service_name">증권</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://land.naver.com/" class="link_service" target="_blank">
+                            <span class="service_icon type_real"></span>
+                            <span class="service_name">부동산</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://map.naver.com" class="link_service" target="_blank">
+                            <span class="service_icon type_map"></span>
+                            <span class="service_name">지도</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="https://comic.naver.com" class="link_service" target="_blank">
+                            <span class="service_icon type_webtoon"></span>
+                            <span class="service_name">웹툰</span>
+                        </a>
+                    </li>
+                    <li class="shortcut_item">
+                        <a href="#" class="link_service" role="button">
+                            <span class="service_icon type_more"></span>
+                            <span class="blind">바로가기 펼침</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="topAsideArea" class="menu_area">
+                <button id="topAsideButton" type="button" class="btn_menu" aria-haspopup="menu" aria-expanded="false">
+                    <span class="blind">확장 영역</span>
+                </button>
+            </div>
+            <div id="topPayArea" class="pay_area">
+                <a href="https://order.pay.naver.com/home" class="link_pay" target="_blank">
+                    <span class="blind">페이 바로가기</span>
+                </a>
+            </div>
+            <div id="topNotiArea" class="notify_area">
+                <button type="button" class="btn_notify" aria-haspopup="menu" aria-expanded="false">
+                    <span class="blind">알림</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="container" role="main">
+        <div id="root">
+            <div class="Layout-module__column_left___tLO23">
+                <div class="Layout-module__banner_area___CUXNe" target="">
+                    <div id="ad_timeboard" style="height: 130px; z-index: 99;">
+                        <div style="width: 100%; height: auto; margin: 0px auto; line-height: 0;">
+                            <iframe id="ad_timeboard_tgtLREC" frameborder="no" scrolling="no" tabindex="0" name=""
+                                title="AD"
+                                style="width: 100%; height: 130px; visibility: inherit; border: 0px; vertical-align: bottom;"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="newsstand" class="Layout-module__content_area___b_3TU">
+                    <div class="ContentHeaderView-module__content_header___nSgPg">
+                        <div class="ContentHeaderView-module__header_tab___WW6fU">
+                            <ul class="ContentHeaderView-module__tab_list___BWrWe" role="tablist">
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><span
+                                        class="ContentHeaderView-module__tab___uYoNi type_news"><a href="#"
+                                            class="ContentHeaderView-module__tab_text___IuWnG" role="tab"
+                                            aria-selected="true">뉴스스탠드</a><a href="#"
+                                            class="ContentHeaderView-module__tab_text___IuWnG" role="tab"
+                                            aria-selected="false">언론사편집</a></span></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">엔터</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">스포츠<span
+                                            class="ContentHeaderView-module__tag_live___w3Oyc">LIVE</span></a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">경제</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ContentHeaderSubView-module__content_header_sub___Yszwk"><a href="#"
+                            class="ContentHeaderSubView-module__btn_more___HnWNR" role="button" aria-haspopup="listbox"
+                            aria-expanded="false" aria-pressed="false">전체언론사<i
+                                class="ContentHeaderSubView-module__ico_triangle___ObyFF"></i></a>
+                        <div class="ContentHeaderSubView-module__sub_news___DECMU"><a
+                                href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y"
+                                target="_blank" class="ContentHeaderSubView-module__news_media___YJm6A">연합뉴스</a>
+                            <div class="ContentHeaderSubView-module__news_box___dH9b3">
+                                <div class="AutoRolling-module__rolling-y___T3kmw" style="animation-duration: 0.5s;">
+                                    <div class="ContentHeaderSubView-module__news_desc___ztwqZ">
+                                        <div class="ContentHeaderSubView-module__news_title___wuetX"><a
+                                                href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0014063598"
+                                                target="_blank">충남·전북 모레까지 최대 400㎜ 이상…전국 많고 강한 비</a></div>
+                                    </div>
+                                </div>
+                                <div class="AutoRolling-module__rolling-y___T3kmw" style="animation-duration: 0.5s;">
+                                    <div class="ContentHeaderSubView-module__news_desc___ztwqZ">
+                                        <div class="ContentHeaderSubView-module__news_title___wuetX"><a
+                                                href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0014063746"
+                                                target="_blank">최저임금 막바지 논의…다음주 결론 날 가능성도</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ContentHeaderSubView-module__sub_home___QWIkL"><a
+                                href="https://newsstand.naver.com/" target="_blank"
+                                class="ContentHeaderSubView-module__link_home___hdZDg ContentHeaderSubView-module__sub___T9JeN">뉴스스탠드</a><a
+                                href="https://news.naver.com/" target="_blank"
+                                class="ContentHeaderSubView-module__link_home___hdZDg">뉴스홈</a></div>
+                    </div>
+                    <div class="MediaView-module__media_area___Z4js3" role="tabpanel">
+                        <div class="MediaSubscriptionView-module__media_subscription___gvTm0">
+                            <div class="MediaSubscriptionView-module__subscription_frame___Nu1Oa"><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_right1___EZAeY"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_right2___O7ORm"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_right3___S3_jO"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_bottom1___AiLtl"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_bottom2___Q5bT5"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_bottom3___GwFQM"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_bottom4___aK3_p"></i><i
+                                    class="MediaSubscriptionView-module__line___tuzjF MediaSubscriptionView-module__to_bottom5___W7aRS"></i>
+                            </div>
+                            <div class="MediaSubscriptionView-module__subscription_group___peb21">
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png"
+                                            height="20" alt="프레시안" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/277.png"
+                                            height="20" alt="아시아경제" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/029.png"
+                                            height="20" alt="디지털타임스" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/330.png"
+                                            height="20" alt="중앙데일리" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/038.png"
+                                            height="20" alt="한국일보" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/006.png"
+                                            height="20" alt="미디어오늘" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/057.png"
+                                            height="20" alt="MBN" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/215.png"
+                                            height="20" alt="한국경제TV" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/930.png"
+                                            height="20" alt="뉴스타파" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/052.png"
+                                            height="20" alt="YTN" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/020.png"
+                                            height="20" alt="동아일보" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/368.png"
+                                            height="20" alt="데일리안" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/422.png"
+                                            height="20" alt="연합뉴스TV" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/up/2022/0905/nsd131925414.png"
+                                            height="20" alt="지디넷코리아" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/005.png"
+                                            height="20" alt="국민일보" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/340.png"
+                                            height="20" alt="OBS" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/up/2022/0328/nsd223244325.png"
+                                            height="20" alt="스포츠투데이" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/981.png"
+                                            height="20" alt="TBS" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/up/2020/0615/nsd10319824.png"
+                                            height="20" alt="한경잡앤조이" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/up/2020/0922/nsd152336602.png"
+                                            height="20" alt="YTN사이언스" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/up/2021/1221/nsd15292271.png"
+                                            height="20" alt="M이코노미뉴스" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/417.png"
+                                            height="20" alt="머니에스" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/953.png"
+                                            height="20" alt="디지털투데이" class="news_logo"></a></div>
+                                <div class="MediaSubscriptionView-module__subscription_box___z8NuT"><a href="#"
+                                        class="MediaSubscriptionView-module__news_thumb___IA4y2"
+                                        aria-disabled="false"><img
+                                            src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/938.png"
+                                            height="20" alt="그린포스트코리아" class="news_logo"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ContentPagingView-module__content_paging___QIMwB">
+                        <div class="ContentPagingView-module__content_view___SdRjS" role="radiogroup"><button
+                                type="button" class="ContentPagingView-module__btn_view_list___j7eNR" role="radio"
+                                aria-checked="false"><span class="blind">리스트형</span></button><button type="button"
+                                class="ContentPagingView-module__btn_view_thumb___zZhgR" role="radio"
+                                aria-checked="true"><span class="blind">썸네일형</span></button></div><button type="button"
+                            class="ContentPagingView-module__btn_prev___JaBFN"><span class="blind">이전
+                                페이지</span></button>
+                        <div class="ContentPagingView-module__content_page___ZM2wA"><span
+                                class="ContentPagingView-module__text___uJNhb"><span
+                                    class="ContentPagingView-module__point___U2tUD">언론사</span> 더보기</span><span
+                                class="current">3<span class="blind">페이지</span></span><span
+                                class="ContentPagingView-module__total___HUvt2"><span class="blind">전체</span>/4</span>
+                        </div><button type="button" class="ContentPagingView-module__btn_next___ZBhby"><span
+                                class="blind">다음 페이지</span></button>
+                    </div>
+                </div>
+                <div id="shopping" class="Layout-module__content_area___b_3TU">
+                    <div></div>
+                    <div
+                        class="ContentHeaderView-module__content_header___nSgPg ContentHeaderView-module__type_shopping___nNcEZ">
+                    </div><iframe title="shoppingbox" src="https://shopsquare.naver.com/"
+                        style="width: 831px; height: 560px;"></iframe>
+                </div>
+                <div id="feed" class="Layout-module__content_area___b_3TU id_book">
+                    <div class="ContentHeaderView-module__content_header___nSgPg">
+                        <div class="ContentHeaderView-module__header_tab___WW6fU">
+                            <ul class="ContentHeaderView-module__tab_list___BWrWe" role="tablist">
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><span
+                                        class="ContentHeaderView-module__tab___uYoNi"><a href="#"
+                                            class="ContentHeaderView-module__tab_text___IuWnG" role="tab"
+                                            aria-selected="false">추천<em>・</em>구독</a></span></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">자동차</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">웹툰</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">패션뷰티</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">레시피</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">리빙</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="true">책방</a></li>
+                                <li class="ContentHeaderView-module__tab_item___dz3nK" role="presentation"><a href="#"
+                                        class="ContentHeaderView-module__tab___uYoNi" role="tab"
+                                        aria-selected="false">지식+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feed_area" role="tabpanel">
+                        <div class="feed_box">
+                            <ul class="HighlightedColumnView-module__common_highlighted_list___ahUrf">
+                                <li class="HighlightedColumnView-module__common_highlighted_item___CNhUf"><a
+                                        target="_blank"
+                                        href="https://smartstore.naver.com/jnbooks/shoppingstory/detail?id=5000433081&amp;page=1"
+                                        class="HighlightedColumnView-module__link_item___kx28e">
+                                        <div class="HighlightedColumnView-module__thumb___IN5Mg"><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 200px;"><img
+                                                    src="https://s.pstatic.net/static/www/mobile/edit/20230628_1095/upload_1687955483648YBO0j.jpg"
+                                                    width="100%" height="200"></span></div>
+                                        <div class="HighlightedColumnView-module__text_color___ZRDm8 common_em">이달의 책 추천
+                                        </div><strong class="HighlightedColumnView-module__title___YGJU_">한국학교사서협회가
+                                            추천하는<br>아이들이 꼭 읽어야 할 명작 도서</strong>
+                                        <div class="HighlightedColumnView-module__source_box___pJRnm"><span
+                                                class="HighlightedColumnView-module__source___j9L07"><span
+                                                    class="name">종로서적</span></span></div>
+                                    </a></li>
+                                <li class="HighlightedColumnView-module__common_highlighted_item___CNhUf"><a
+                                        target="_blank" href="https://smartstore.naver.com/interpark_book"
+                                        class="HighlightedColumnView-module__link_item___kx28e">
+                                        <div class="HighlightedColumnView-module__thumb___IN5Mg"><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 200px;"><img
+                                                    src="https://s.pstatic.net/static/www/mobile/edit/20230629_1095/upload_1688001784630PmE7I.jpg"
+                                                    width="100%" height="200"></span></div>
+                                        <div class="HighlightedColumnView-module__text_color___ZRDm8 common_em">무료 배송
+                                        </div><strong class="HighlightedColumnView-module__title___YGJU_">배송비 부담없이 즐기는
+                                            독서<br>1만원 이상 무료 배송</strong>
+                                        <div class="HighlightedColumnView-module__source_box___pJRnm"><span
+                                                class="HighlightedColumnView-module__source___j9L07"><span
+                                                    class="name">인터파크도서</span></span></div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div id="pc-main-ad-div-p_main_book" data-hide-last-sibling="false"
+                                data-on-error-parent-node-class="feed_box">
+                                <div style="width: 100%; height: auto; margin: 0px auto; line-height: 0;"><iframe
+                                        id="pc-main-ad-div-p_main_book_tgtLREC" frameborder="no" scrolling="no"
+                                        tabindex="0" name="" title="AD"
+                                        style="width: 100%; height: 50px; visibility: inherit; border: 0px; vertical-align: bottom;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed_box">
+                            <div class="SixColumnPoster-module__feed_title_wrap___mQwax"><strong
+                                    class="SixColumnPoster-module__feed_title___DtSuf">이번 주 화제의 신간</strong></div>
+                            <ul class="SixColumnPoster-module__common_list___OAMMz">
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40211338618"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4021133%2F40211338618.20230606105825.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">어떻게 살 빼야 할지 막막한 너에게</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 김예진 약사 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 라이온북스 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40687452628"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4068745%2F40687452628.20230711113802.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">2024 에듀윌 KBS한국어능력시험
+                                            한권끝장</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 송주연, 김지학, 황혜림 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 에듀윌 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40687463623"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4068746%2F40687463623.20230713072123.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">명탐정 코난 103권</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 아오야마 고쇼 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 서울미디어코믹스(서울문화사) </span>
+                                        </div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40460512619"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4046051%2F40460512619.20230704084454.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">나는 죽을 때까지 지적이고 싶다</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 양원근 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 정민미디어 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40443770625"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4044377%2F40443770625.20230704085132.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">화가가 사랑한 바다</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 정우철 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 오후의서재 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40334556619"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4033455%2F40334556619.20230704085818.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">사소해서 물어보지 못했지만 궁금했던 이야기
+                                            3</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 김경민, 권은경, 김희경, 윤미숙
+                                            </span><span class="SixColumnPoster-module__sub___aKQum"> arte </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40601759629"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4060175%2F40601759629.20230704084259.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">감정은 사라져도 결과는 남는다</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 이해인 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 필름(Feelm) </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40702316620"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4070231%2F40702316620.20230712072330.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">제대로 알면 귀에 딱 꽂히는 기적특강
+                                            속담</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 기적학습연구소 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 길벗스쿨 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40772315620"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4077231%2F40772315620.20230712072326.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">꿀잼 토론 전략</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 김건우 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 푸른들녘 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40705435618"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4070543%2F40705435618.20230712072117.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">사적이고 지적인 미술관</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 이원율 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 알에이치코리아(RHK) </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40801135618"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4080113%2F40801135618.20230711113637.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">예비 매3문 매일 지문 3개씩 푸는 문학
+                                            기출(2023)</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 안인숙 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 키출판사 </span></div>
+                                    </a></li>
+                                <li class="SixColumnPoster-module__common_item___kpJBO"><a
+                                        href="https://msearch.shopping.naver.com/book/catalog/40687464619"
+                                        target="_blank" class="SixColumnPoster-module__link_item___gNbik">
+                                        <div class="SixColumnPoster-module__thumb___uLLRt"><span
+                                                class="BookEffectView-module__book_effect___qt1JW"></span><span
+                                                class="ImgView-module__content_img___QA0gl"
+                                                style="width: 100%; height: 156px;"><img
+                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshopping.phinf%2Fmain_4068746%2F40687464619.20230711113230.jpg%22&amp;type=nf216_312&amp;service=navermain"
+                                                    width="100%" height="156"></span></div><strong
+                                            class="SixColumnPoster-module__title___eNN0f">초등 몰입 영어</strong>
+                                        <div class="SixColumnPoster-module__sub_box___aB6YY"><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 케다맘 </span><span
+                                                class="SixColumnPoster-module__sub___aKQum"> 넥서스 </span></div>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="FeedView-module__content_more_area___azKs4"><button type="button"
+                            class="FeedView-module__btn_more___zGfeT">펼쳐보기<i
+                                class="FeedView-module__ico_plus___dMU_U"></i></button></div>
+                </div>
+            </div>
+            <div class="Layout-module__column_right___wLgQj">
+                <div class="Layout-module__right_content_area___pwiOb" id="right-content-area">
+                    <div class="Layout-module__right_top___h3g3v">
+                        <div id="account" class="Layout-module__content_area___b_3TU">
+                            <div class="MyView-module__my_login___tOTgr">
+                                <p class="MyView-module__login_text___G0Dzv">네이버를 더 안전하고 편리하게 이용하세요</p><a
+                                    href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/"
+                                    class="MyView-module__link_login___HpHMW"><i
+                                        class="MyView-module__naver_logo____Y442"><span
+                                            class="blind">NAVER</span></i>로그인</a>
+                                <div class="MyView-module__login_more___Qaa3P"><a
+                                        href="https://nid.naver.com/user/help.nhn?todo=idinquiry"
+                                        class="MyView-module__link_more___sbxGh">아이디 찾기</a><a
+                                        href="https://nid.naver.com/nidreminder.form"
+                                        class="MyView-module__link_more___sbxGh">비밀번호 찾기</a><a
+                                        href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
+                                        class="MyView-module__link_more___sbxGh">회원가입</a></div>
+                            </div>
+                        </div>
+                        <div class="Layout-module__banner_area___CUXNe" target="">
+                            <div id="pc-main-ad-div-p_main_rollingboard_v1" data-hide-last-sibling="false"
+                                style="height: 240px;">
+                                <div
+                                    style="width: 420px; height: 240px; margin: 0px auto; position: relative; line-height: 0;">
+                                    <iframe id="pc-main-ad-div-p_main_rollingboard_v1_tgtLREC" frameborder="no"
+                                        scrolling="no" tabindex="0" name="" title="AD"
+                                        style="width: 420px; height: 240px; visibility: inherit; border: 0px; vertical-align: bottom; position: absolute;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Layout-module__content_area___b_3TU">
+                            <div class="DailyBoardView-module__daily_board_area___Q6Jmf">
+                                <div class="DailyBoardView-module__header_group___uGkqW"><a
+                                        href="https://weather.naver.com/"
+                                        class="DailyBoardView-module__header_title___Uk3ix" target="_blank"
+                                        rel="noreferrer">날씨</a><a
+                                        href="https://weather.naver.com/today/09530102?&amp;targetId=compare"
+                                        class="DailyBoardView-module__link_info___XZObq" target="_blank">예보 비교</a><span
+                                        class="DailyBoardView-module__btn_location___F3ZP2">서울시 구로동</span></div>
+                                <div class="DailyBoardView-module__info_group___f8OSu">
+                                    <div class="DailyBoardView-module__info_box___QhnLh"><a
+                                            href="https://weather.naver.com/today/09530102?cpName=KMA"
+                                            class="DailyBoardView-module__link_info_detail___miKv5" target="_blank"
+                                            rel="noreferrer">
+                                            <div class="DailyBoardView-module__info_weather___uEgXj">
+                                                <div
+                                                    class="DailyBoardView-module__weather_icon___MfVmp DailyBoardView-module__ico_w09___lRP0x">
+                                                </div>
+                                                <div class="DailyBoardView-module__weather_temperature___pOAGy">24.8°
+                                                    <div class="DailyBoardView-module__weather_status___edGad">비</div>
+                                                </div>
+                                            </div>
+                                            <div class="DailyBoardView-module__info_temperature___ivR0A"><span
+                                                    class="DailyBoardView-module__temperature_low___aC6Fe"><span
+                                                        class="blind">최저기온</span>24°</span><span
+                                                    class="DailyBoardView-module__temperature_high___QLp_M"><span
+                                                        class="blind">최고기온</span>26°</span></div>
+                                        </a><a href="https://weather.naver.com/air/09530102?cpName=KMA"
+                                            class="DailyBoardView-module__link_weather_dust___sLUpk" target="_blank"
+                                            rel="noreferrer"><span
+                                                class="DailyBoardView-module__dust_text___E7xUx">미세<span
+                                                    class="DailyBoardView-module__dust_status___zxYwi DailyBoardView-module__type_good___d5_iT">좋음</span></span><span
+                                                class="DailyBoardView-module__dust_text___E7xUx">초미세<span
+                                                    class="DailyBoardView-module__dust_status___zxYwi DailyBoardView-module__type_good___d5_iT">좋음</span></span></a>
+                                    </div>
+                                    <div class="DailyBoardView-module__info_box___QhnLh"><a
+                                            href="https://weather.naver.com/today/09530102?cpName=KMA"
+                                            class="DailyBoardView-module__link_info_weather___NwVr2" target="_blank"
+                                            rel="noreferrer">
+                                            <div class="DailyBoardView-module__weather_graph___IkuZo"><canvas
+                                                    width="180" height="37"
+                                                    style="min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%;"></canvas>
+                                            </div>
+                                            <ul class="DailyBoardView-module__weather_list___PC7Rr">
+                                                <li class="DailyBoardView-module__weather_item___vpzIh">
+                                                    <div
+                                                        class="DailyBoardView-module__time___gZerA DailyBoardView-module__is_current___l1RNJ">
+                                                        13시</div>
+                                                    <div
+                                                        class="DailyBoardView-module__icon___M5DI4 DailyBoardView-module__ico_s_w09___vph4E">
+                                                        <span class="blind">비</span></div>
+                                                    <div class="DailyBoardView-module__celsius___pJjFJ"
+                                                        style="margin-top: 36px;">25°</div>
+                                                </li>
+                                                <li class="DailyBoardView-module__weather_item___vpzIh">
+                                                    <div class="DailyBoardView-module__time___gZerA">15</div>
+                                                    <div
+                                                        class="DailyBoardView-module__icon___M5DI4 DailyBoardView-module__ico_s_w09___vph4E">
+                                                        <span class="blind">비</span></div>
+                                                    <div class="DailyBoardView-module__celsius___pJjFJ"
+                                                        style="margin-top: 0px;">27°</div>
+                                                </li>
+                                                <li class="DailyBoardView-module__weather_item___vpzIh">
+                                                    <div class="DailyBoardView-module__time___gZerA">17</div>
+                                                    <div
+                                                        class="DailyBoardView-module__icon___M5DI4 DailyBoardView-module__ico_s_w09___vph4E">
+                                                        <span class="blind">비</span></div>
+                                                    <div class="DailyBoardView-module__celsius___pJjFJ"
+                                                        style="margin-top: 0px;">27°</div>
+                                                </li>
+                                                <li class="DailyBoardView-module__weather_item___vpzIh">
+                                                    <div class="DailyBoardView-module__time___gZerA">19</div>
+                                                    <div
+                                                        class="DailyBoardView-module__icon___M5DI4 DailyBoardView-module__ico_s_w09___vph4E">
+                                                        <span class="blind">비</span></div>
+                                                    <div class="DailyBoardView-module__celsius___pJjFJ"
+                                                        style="margin-top: 18px;">26°</div>
+                                                </li>
+                                                <li class="DailyBoardView-module__weather_item___vpzIh">
+                                                    <div class="DailyBoardView-module__time___gZerA">21</div>
+                                                    <div
+                                                        class="DailyBoardView-module__icon___M5DI4 DailyBoardView-module__ico_s_w09___vph4E">
+                                                        <span class="blind">비</span></div>
+                                                    <div class="DailyBoardView-module__celsius___pJjFJ"
+                                                        style="margin-top: 18px;">26°</div>
+                                                </li>
+                                            </ul>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Layout-module__content_area___b_3TU">
+                            <div class="DailyBoardView-module__daily_board_area___Q6Jmf">
+                                <div class="DailyBoardView-module__header_group___uGkqW"><a
+                                        href="https://finance.naver.com/"
+                                        class="DailyBoardView-module__header_title___Uk3ix" target="_blank"
+                                        rel="noreferrer">증시</a><button type="button"
+                                        class="DailyBoardView-module__btn_info___Vnd0i" aria-expanded="false"
+                                        aria-pressed="false"><span class="blind">정보 더보기</span></button>
+                                    <p class="DailyBoardView-module__layer_info___pHXvI" aria-hidden="false">로그인 시 관심
+                                        종목의 주가를 확인할 수 있습니다.<br>로그아웃 시 인기 검색 종목이 제공됩니다.<button type="button"
+                                            class="DailyBoardView-module__btn_close___NzNry"><span
+                                                class="blind">닫기</span></button></p>
+                                    <div class="DailyBoardView-module__header_aside___JAWQD">07.13. 12:06<button
+                                            type="button" class="DailyBoardView-module__btn_refresh___YFJ90"><span
+                                                class="blind">새로고침</span></button></div>
+                                </div>
+                                <div class="DailyBoardView-module__info_group___f8OSu">
+                                    <div
+                                        class="DailyBoardView-module__info_box___QhnLh DailyBoardView-module__type_stock___w4nGo">
+                                        <div class="DailyBoardView-module__info_rolling___DOzE_">
+                                            <div class="AutoRolling-module__rolling-x___Omp83"
+                                                style="animation-duration: 0.5s;"><a
+                                                    href="https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_USDKRW"
+                                                    class="DailyBoardView-module__link_stock_info___pkG7w"
+                                                    target="_blank" rel="noreferrer">
+                                                    <div class="DailyBoardView-module__stock_info___eS3yV">
+                                                        <div class="DailyBoardView-module__stock_name___s9Qlh">환율 USD
+                                                        </div>
+                                                        <div class="DailyBoardView-module__stock_price___uUj_R">1,274.70
+                                                        </div>
+                                                        <div
+                                                            class="DailyBoardView-module__stock_gap___xupd6 DailyBoardView-module__type_down___qmcHA">
+                                                            <i class="DailyBoardView-module__ico_status____1QL1"><span
+                                                                    class="blind">하락</span></i>6.30<span
+                                                                class="DailyBoardView-module__rate___aja8C">-0.49%</span>
+                                                        </div>
+                                                        <div class="DailyBoardView-module__stock_graph___WtFMk"><img
+                                                                src="https://ssl.pstatic.net/imgfinance/chart/mobile/marketindex/month3/FX_USDKRW_naverpc_l.png"
+                                                                width="180" height="44" alt=""></div>
+                                                        <p class="DailyBoardView-module__stock_text___UfuTE">3개월 차트</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="AutoRolling-module__rolling-x___Omp83"
+                                                style="animation-duration: 0.5s;"><a
+                                                    href="https://finance.naver.com/sise/sise_index.nhn?code=KOSPI"
+                                                    class="DailyBoardView-module__link_stock_info___pkG7w"
+                                                    target="_blank" rel="noreferrer">
+                                                    <div class="DailyBoardView-module__stock_info___eS3yV">
+                                                        <div class="DailyBoardView-module__stock_name___s9Qlh">코스피</div>
+                                                        <div class="DailyBoardView-module__stock_price___uUj_R">2,598.01
+                                                        </div>
+                                                        <div
+                                                            class="DailyBoardView-module__stock_gap___xupd6 DailyBoardView-module__type_up___eUZel">
+                                                            <i class="DailyBoardView-module__ico_status____1QL1"><span
+                                                                    class="blind">상승</span></i>23.29<span
+                                                                class="DailyBoardView-module__rate___aja8C">+0.90%</span>
+                                                        </div>
+                                                        <div class="DailyBoardView-module__stock_graph___WtFMk"><img
+                                                                src="https://ssl.pstatic.net/imgfinance/chart/mobile/mini/KOSPI_naverpc_l.png"
+                                                                width="180" height="72" alt=""></div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="DailyBoardView-module__info_box___QhnLh DailyBoardView-module__type_stock___w4nGo">
+                                        <ul class="DailyBoardView-module__stock_list___Ipk3M">
+                                            <li class="DailyBoardView-module__stock_item___Iy8GB"><a
+                                                    href="https://finance.naver.com/item/main.naver?code=086520"
+                                                    class="DailyBoardView-module__link_stock___d9uPi" target="_blank"
+                                                    rel="noreferrer"><span
+                                                        class="DailyBoardView-module__stock_name___s9Qlh">에코프로</span><span
+                                                        class="DailyBoardView-module__stock_price___uUj_R"><i
+                                                            class="DailyBoardView-module__ico_status____1QL1 DailyBoardView-module__type_up___eUZel"><span
+                                                                class="blind">상승</span></i>986,000</span></a></li>
+                                            <li class="DailyBoardView-module__stock_item___Iy8GB"><a
+                                                    href="https://finance.naver.com/item/main.naver?code=042700"
+                                                    class="DailyBoardView-module__link_stock___d9uPi" target="_blank"
+                                                    rel="noreferrer"><span
+                                                        class="DailyBoardView-module__stock_name___s9Qlh">한미반도체</span><span
+                                                        class="DailyBoardView-module__stock_price___uUj_R"><i
+                                                            class="DailyBoardView-module__ico_status____1QL1 DailyBoardView-module__type_up_maximum___ClG22 DailyBoardView-module__type_up___eUZel"><span
+                                                                class="blind">상승</span></i>41,200</span></a></li>
+                                            <li class="DailyBoardView-module__stock_item___Iy8GB"><a
+                                                    href="https://finance.naver.com/item/main.naver?code=005930"
+                                                    class="DailyBoardView-module__link_stock___d9uPi" target="_blank"
+                                                    rel="noreferrer"><span
+                                                        class="DailyBoardView-module__stock_name___s9Qlh">삼성전자</span><span
+                                                        class="DailyBoardView-module__stock_price___uUj_R"><i
+                                                            class="DailyBoardView-module__ico_status____1QL1 DailyBoardView-module__type_up___eUZel"><span
+                                                                class="blind">상승</span></i>72,400</span></a></li>
+                                            <li class="DailyBoardView-module__stock_item___Iy8GB"><a target="_blank"
+                                                    href="https://finance.naver.com/sise/lastsearch2.naver"
+                                                    class="DailyBoardView-module__link_stock___d9uPi DailyBoardView-module__type_more___EmA_a">인기종목
+                                                    더보기</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="widgetboard" class="Layout-module__right_bottom___s54MX">
+                        <div class="RightSecond-module__tool_area___KOtcI">
+                            <div class="RightSecond-module__tool_title___chjKZ">위젯 보드</div>
+                            <div class="RightSecond-module__tool_content___rysfx">
+                                <div class="RightSecond-module__tool_group___sTw_L"><a
+                                        href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/?to=widget"
+                                        class="RightSecond-module__calendar_box___xnbPZ">
+                                        <div class="RightSecond-module__calendar_info___xtn_r"><span
+                                                class="RightSecond-module__link_info_title___Z_U01">캘린더</span>
+                                            <div class="RightSecond-module__info_box___KBiuI">
+                                                <div class="RightSecond-module__link_info_date___KzwWL">7.13<span
+                                                        class="RightSecond-module__day___AFuw4">목</span></div>
+                                            </div><span class="RightSecond-module__link_login___gu_oJ">로그인하기</span>
+                                        </div>
+                                    </a></div>
+                                <div class="RightSecond-module__tool_group___sTw_L"><a
+                                        href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/?to=widget"
+                                        class="RightSecond-module__memo_box___TS9Ea">
+                                        <div class="RightSecond-module__memo_top___oRi4T"><span
+                                                class="RightSecond-module__link_memo_title___qJD7A">메모</span></div>
+                                        <div class="RightSecond-module__memo_info___qVruF">
+                                            <ul class="RightSecond-module__info_list___HWUd8">
+                                                <li class="RightSecond-module__info_item___dvMK8"></li>
+                                                <li class="RightSecond-module__info_item___dvMK8"></li>
+                                                <li class="RightSecond-module__info_item___dvMK8"><span
+                                                        class="RightSecond-module__login_text___x_Y2o">로그인하기</span></li>
+                                            </ul>
+                                        </div>
+                                    </a></div>
+                                <div class="RightSecond-module__tool_group___sTw_L"><a
+                                        href="https://papago.naver.com/?sk=ko&amp;st=&amp;tk=en"
+                                        class="RightSecond-module__link_papago_box___wRMmH" target="_blank"
+                                        rel="noreferrer">
+                                        <div class="RightSecond-module__papago_box___p1UbB"><i
+                                                class="RightSecond-module__ico_papago_text___S6EMJ"><span
+                                                    class="blind">papago</span></i>
+                                            <div class="RightSecond-module__papago_text___VLGlw">번역하기</div>
+                                        </div>
+                                    </a></div>
+                                <div class="RightSecond-module__tool_group___sTw_L">
+                                    <div class="RightSecond-module__dic_box___nuOJs">
+                                        <div class="RightSecond-module__dic_box_info___sDfWY"><a
+                                                href="https://en.dict.naver.com/#/mini/main"
+                                                class="RightSecond-module__link_info_text___kDhhB">영어사전</a><a
+                                                href="https://learn.dict.naver.com/m/endic/today/conversation.dict"
+                                                class="RightSecond-module__link_info_today___cHFIV">
+                                                <div class="RightSecond-module__today_expression___JWte_">
+                                                    <div class="RightSecond-module__expression_text___p8ne7">We've
+                                                        already gone over this.</div>
+                                                </div>
+                                                <div class="RightSecond-module__today_translate___bUa99">이 얘기는 이미 했었잖아.
+                                                </div>
+                                            </a></div><a href="https://en.dict.naver.com/#/mini/main"
+                                            class="RightSecond-module__link_search___x5ZXc" aria-label="단어 검색하기"><span
+                                                class="RightSecond-module__search_text___XNupR" aria-hidden="true">단어
+                                                검색하기</span></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="RightSecond-module__tool_group___sTw_L RightSecond-module__type_wide___BoQ8c RightSecond-module__type_now___m3lZX">
+                                    <div class="RightSecond-module__now_box___qib54">
+                                        <div class="RightSecond-module__now_top___YkJm4"><a
+                                                href="https://now.naver.com/schedule"
+                                                class="RightSecond-module__link_now_text___EdNYa" target="_blank"><span
+                                                    class="blind">NOW</span></a></div>
+                                        <div class="RightSecond-module__now_info___vUv0V">
+                                            <ul class="RightSecond-module__now_list___CcP1r"
+                                                style="transform: translate(-336px); transition: none 0s ease 0s; will-change: transform;">
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/l/1744647"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230712_232%2FHHRX1_1689126449487qFVfD_PNG%2F1689126449346.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230516_216%2Fo57rW_1684216811674rSWy0_PNG%2F1684216811648.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span><span
+                                                            class="RightSecond-module__tag___RX3xR">LIVE</span></a><a
+                                                        href="https://now.naver.com/l/1744647"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">쇼퀸 :
+                                                            투표하기</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/s/now.5254?shareReplayId=37923682#replay"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230712_11%2Fo4ycU_16891484773904Ka2Q_PNG%2F1689148477219.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230707_296%2F1TyPy_1688691683709AHqxa_PNG%2F1688691683680.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span></a><a
+                                                        href="https://now.naver.com/s/now.5254?shareReplayId=37923682#replay"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">영화 &lt;더 문&gt;
+                                                            무비토크 스페셜쇼</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/s/now.6449?shareReplayId=37662573#replay"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230704_137%2FPr0CZ_1688457587941OhQ0A_PNG%2F1688457587774.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230626_134%2FMHtOS_1687753283565vhQDm_PNG%2F1687753283547.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span></a><a
+                                                        href="https://now.naver.com/s/now.6449?shareReplayId=37662573#replay"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">최민식을 보았다
+                                                            메가토크</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/s/now.5934?shareReplayId=37214659#replay"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230621_279%2FEfx3l_16873351502295uWFm_PNG%2F1687335150199.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230626_103%2F540jW_1687761262836h9ktC_PNG%2F1687761262805.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span></a><a
+                                                        href="https://now.naver.com/s/now.5934?shareReplayId=37214659#replay"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">마당이 있는 집
+                                                            드라마리뷰</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/s/now.5915?shareReplayId=37566838#replay"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230704_249%2FGEe6X_1688457135546lH3dk_PNG%2F1688457135494.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230622_5%2FMgxGF_1687405425366uSRJK_PNG%2F1687405425350.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span></a><a
+                                                        href="https://now.naver.com/s/now.5915?shareReplayId=37566838#replay"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">청룡시리즈어워즈
+                                                            핸드프린팅</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/l/1744680"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230712_100%2FmOvDI_1689126075093UGEz8_PNG%2F1689126075057.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20221202_23%2FP52Im_1669953730662ihupA_PNG%2F1669953730657.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span><span
+                                                            class="RightSecond-module__tag___RX3xR">LIVE</span></a><a
+                                                        href="https://now.naver.com/l/1744680"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">정오
+                                                            뉴스</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/l/1744681"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230712_140%2FzluTr_1689136996159Envja_PNG%2F1689136996073.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230710_159%2FIea9m_1688952325618qpvLu_PNG%2F1688952325591.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span><span
+                                                            class="RightSecond-module__tag___RX3xR">LIVE</span></a><a
+                                                        href="https://now.naver.com/l/1744681"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">형사록 시즌2✨
+                                                            하이라이트</span></a></li>
+                                                <li class="RightSecond-module__now_item___RsYwY"><a
+                                                        href="https://now.naver.com/s/now.5254?shareReplayId=37524327#replay"
+                                                        class="RightSecond-module__item_thumb___lNKIU" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__thumb___krRnF"><span
+                                                                class="ImgView-module__content_img___QA0gl"
+                                                                style="width: 100px; height: 138px;"><img
+                                                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230630_1%2FGGrBA_1688104359436jiIUL_PNG%2F1688104359395.png%22&amp;type=f200_276&amp;service=navermain"
+                                                                    width="100" height="138"></span></span><span
+                                                            class="RightSecond-module__logo___F2xwE"><img
+                                                                src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Ftvcast.phinf%2F20230707_283%2Fm3zlf_1688690788723grNND_PNG%2F1688690788702.png%22&amp;type=m168_80&amp;service=navermain"
+                                                                class="RightSecond-module__logo_thumb___g92ih"
+                                                                alt=""></span></a><a
+                                                        href="https://now.naver.com/s/now.5254?shareReplayId=37524327#replay"
+                                                        class="RightSecond-module__item_desc___CBYqM" target="_blank"
+                                                        rel="noreferrer"><span
+                                                            class="RightSecond-module__desc_text___Zj1oc">미션 임파서블7 내한
+                                                            레드카펫</span></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><a href="https://m.naver.com/" class="RightSecond-module__link_more___u2fYX"><span
+                                    class="RightSecond-module__more_text___kOE1r"><em
+                                        class="RightSecond-module__point___udj6V">모바일 네이버 메인</em> 열기</span></a>
+                        </div>
+                        <div class="Layout-module__content_area___b_3TU">
+                            <div class="RightSecond-module__banner_box___w4PCJ"><a
+                                    href="https://campaign.naver.com/naverdetails/newpc/"
+                                    class="RightSecond-module__link_banner___OJtFz" target="_blank"><i
+                                        class="RightSecond-module__ico_banner_info___d7P0d"></i><em
+                                        class="RightSecond-module__point___udj6V">새로워진 PC 네이버 메인</em> 살펴보기</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="SettingView-module__layer_setting___JwfQs"><a href="#" role="button"
+                    class="SettingView-module__btn_setting___Z_3Uu SettingView-module__type_top___GkN8V"
+                    aria-pressed="false"><span class="blind">최상단으로 이동</span></a><a id="viewSetting" href="#"
+                    role="button"
+                    class="SettingView-module__btn_setting___Z_3Uu SettingView-module__type_system___kev9z"
+                    aria-haspopup="true" aria-expanded="false" aria-pressed="false"><span class="blind">홈 설정</span></a>
+            </div><a href="https://m.naver.com" class="MobileButtonView-module__link_mobile_v___Ptkx7">모바일 버전으로 보기</a>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <div class="footer_inner">
+            <div class="nbanner_area">
+                <div id="da_public_left">
+                    <div style="width: 410px; height: 100px; border: 0pt none;"><iframe id="da_public_left_tgtLREC"
+                            width="410" height="100" frameborder="no" scrolling="no" tabindex="0" title="AD"
+                            style="border: 0px; vertical-align: bottom;"
+                            src="https://siape.veta.naver.com/fxshow?su=SU10868&amp;nrefreshx=0#frameId=da_public_left_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=1013360038.3943634&amp;isFluid=false&amp;runtime=NDPSDK"></iframe>
+                    </div>
+                </div>
+                <div id="da_public_right">
+                    <div style="width: 410px; height: 100px; border: 0pt none;"><iframe id="da_public_right_tgtLREC"
+                            width="410" height="100" frameborder="no" scrolling="no" tabindex="0" title="AD"
+                            style="border: 0px; vertical-align: bottom;"
+                            src="https://siape.veta.naver.com/fxshow?su=SU10869&amp;nrefreshx=0#frameId=da_public_right_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=2868520652.0611634&amp;isFluid=false&amp;runtime=NDPSDK"></iframe>
+                    </div>
+                </div>
+                <div id="veta_time2">
+                    <div style="width: 410px; height: 100px; border: 0pt none;"><iframe id="veta_time2_tgtLREC"
+                            width="410" height="100" frameborder="no" scrolling="no" tabindex="0" title="AD"
+                            style="border: 0px; vertical-align: bottom;"
+                            src="https://siape.veta.naver.com/fxshow?su=SU10870&amp;nrefreshx=0#frameId=veta_time2_tgtLREC&amp;origin=https%3A%2F%2Fwww.naver.com&amp;msgToken=5975753078.719792&amp;isFluid=false&amp;runtime=NDPSDK"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="notice_area">
+                <div class="notice_box">
+                    <h3 class="title"><a target="_blank" href="https://www.naver.com/NOTICE">공지사항</a></h3>
+                </div><a href="/more.html" target="_blank" class="link_all">서비스 전체보기</a>
+            </div>
+            <div class="aside_area">
+                <div class="partner_box_wrap">
+                    <div class="partner_box">
+                        <h3 class="title">Creators</h3><a target="_blank"
+                            href="https://www.navercorp.com/service/creators" class="link_partner">크리에이터</a><a
+                            target="_blank" href="https://www.navercorp.com/service/business"
+                            class="link_partner">스몰비즈니스</a>
+                    </div>
+                    <div class="partner_box">
+                        <h3 class="title">Partners</h3><a target="_blank"
+                            href="https://campaign.naver.com/smefullcare/online/" class="link_partner">SME 풀케어 시스템</a><a
+                            target="_blank" href="https://business.naver.com/service.html" class="link_partner">비즈니스 ·
+                            광고</a><a target="_blank" href="https://sell.storefarm.naver.com/#/home/about"
+                            class="link_partner">스토어 개설</a><a target="_blank" href="https://smartplace.naver.com/"
+                            class="link_partner">지역업체 등록</a><a target="_blank"
+                            href="https://expert.naver.com/expert/introduction?tab=guide#join" class="link_partner">엑스퍼트
+                            등록</a>
+                    </div>
+                    <div class="partner_box">
+                        <h3 class="title">Developers</h3><a target="_blank" href="https://developers.naver.com/"
+                            class="link_partner">네이버 개발자 센터</a><a target="_blank"
+                            href="https://developers.naver.com/docs/common/openapiguide/#/apilist.md"
+                            class="link_partner">오픈 API</a><a target="_blank" href="https://naver.github.io/"
+                            class="link_partner">오픈소스</a><a target="_blank" href="https://d2.naver.com/"
+                            class="link_partner">네이버 D2</a><a target="_blank" href="http://d2startup.com/"
+                            class="link_partner">네이버 D2SF</a><a target="_blank" href="https://www.naverlabs.com/"
+                            class="link_partner">네이버 랩스</a>
+                    </div>
+                </div>
+                <div class="service_box_wrap">
+                    <div class="service_box"><a target="_blank" href="http://whale.naver.com/" class="service_logo"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAC91BMVEUAAACE1dAbf6jE1Nq/z9e82drQ3OG7ytOzws+6x9QNs7MeLpQSx60QrLAfL50gMakTxKyzwc8fMacSr6yywc8fMKIdLYzJ1d4KrrW6ydMJrrUbr6QgMKW2xNEcr6W7ydUfL5cIr7XBztgMtbMeL50fMaQQzrI0tK4cLIQUvqsVvqofMKLL0eGzxM+4xtIZuKcJr7XCyNt0xsILsLW1w9AdLYZwvL8gMaoeLY6CzMceLYyxz9fI1d0JwLMeLY4KrbXFzeAgMqvN2OEIrLUGsrVIurMfLpAcLIIIsbVWs7MeLpXIzt0UvakgMqwfL5x4wcEJsLYfMagWt6k6qqoil6DV2+UdK4EeMoEfLpOzws4/s7YgMacXvqoC27QcK38B17TE1dobKW0bKnID0bTP3OACzrQcKngcLIMbKXAD07QeLYfi6uzY4+YfLpDN2+DK2d0cK3zU4eTS3+IFzLQeL5ccKnXk7O7G19wgMJ3R3uHa5ejL2t7c5unI2Nzg6esBxrMfMKPp7vEeLYrr8fMNr7X2+PkeLYzt8vQE2LTx9fYfLpPz9/gHyLMOsrUHr7UCybQLs7YKu7UIuLUFvLQGwbUIxbQGw7QcKnTZ5OfV4uUJv67e5+rd5+rl7e8Ju6z3+vvm7vDp8PHs8vPw9fbv9PUgMaj6/PwgMqwJs6kNw7AFubULtrUGtbUJvrQEv7QAwq8MrqYKuKsKtqn+/v4Osaf7/P0K1rMHq6UeqKQNqKQhNoIgSH0Vvqoie5MhWIdV3cAcsaYhhZoglJkdLXnJ7+ia5tU61rgp1rceoKIhb4whZYgcM3fj9vJw3sdJx7xtd6sXt6hCT5AvPpAfPYQbKIMcJ34fP3q+8uSy49ux0tWd2NKYzM+A48yE08t6xchdv8FP0b1zfbcSpKIgToEbJ3nE5OG12Nmn19WM5tGKk8ehqMZlxcJJuLwgtLcbvbYc2bUTtaknNpA1Q4bZ7uuzuNuP3M9p0cNfbLUKtq5IVqk8Sp8jZpxaZZrUCA9eAAAAXXRSTlMABAj99BcO6IpfLhj9hPLp5ryyq6ZzXDnd2cuYkHtzbFFOQj0yJv76+ebc29fXx8TCuJuVlIqHgX5gPS0kEvn49/f08O3t6+fj2tLR0MzGeGNfWvbz7sXBpYN4PB4CDkIdAAAFcUlEQVRo3q3TdVwTYRjA8eeI0SKgYnd3d3d362tgO7u7Y4rd3d2K4pwwQkAQJUSxu7vbPzwYg9vufe+eO/neP9vtPr/n7t53gFMobxXPVu719pu4t/LM2a4gBwioeGZP9/0U9TyrFEyHepUSeyW45+wB/8GmXetZskpkdlGbz+w+CyVDThdV+QyT0FSMyFtikiIZMnOggIvnOMWaFwS0LBkkQj/q/mL8UpVDvv2ui6V89XvF+qm1C2rnNx8u6ferq8zfGlcHWdUbD/8PtbPI7p7aC5R49Mn6TFWZ5Z2jzKNPolOVJPtD04HEhLxFh6YH5lsqWHQQ1dVBCjFW2qUJo+8Xq3BAUeputenci27Qo6u9FGpC+8dV6pUODAZDQkKCwdAFRNz+s2wMiYwbQkwi7oWVBCvOHUep9yQkTkfMIsIv+/HygKVigaPoYuMFX+InGEQXJIS4kjRBN/b5JZutAaHcxDhQ3gVD7AWrU0a9TpgPO5OqnMUOciWJA9O8jh+IYwwmAhE39gnMrwFpchByQXCjn/kvCOf1ROil7z4LgnWuVZiQ8UpFh/gTgYs3tlvzFj4AiVbYN7oSoaDL20VaQAou6drE9UpcCCUWruyeL+ZbM3UL8Yw+YrHD4n2ozgdY9X3n05g3UnHCC6R0Xvv9pfaj/ImFoN3zqbQcJOlJkugpofWfafnoSGIp4rIvg5N5iXn+0aIS7vUQ/zBfFtMyFyPJogajXOpHrIQvYprNJf0JiEkAJu8TQqwF7VnE5mTaQyaX5PvRwUQkbLeEpH1UhqRw9ZHrP3ElInf3SOkEABmJWWhfaVG9iciHywulzNWAjY6kuiSV9wklFOELpeWHAsINZ2T3+d1JcXHrLmkVITcRGMJ8hsDehCZ8rozSkINYCKTmn8QRQn8AuQElwYtYCj4vyieG6gjdy51y6kMZYkUXmmj58kP9CcOHL7PlaKElEdEFR5031wPjCNvd2fKgOKHqF6CP1AeI7j1k+PA/aSfDdsiDjESBgDm8SJIiaCuCsgH6a7xAkuLmBASFA67zzAMuanEDdAoUHvX06dNgncldLQYU763Ex6hLkebPz7TaCfIHtOyt0kMtCpRROyAc1R8GXvy1Q1Qc/htmYNQFtyHqXEH1N2eD9ioH3NyM4gHO/VSJ2IKTC7ixqgZ8m4bjDVBMTb/waFx/IwfgNUCFK1NwHACgvZoBN5EDMgGAzRJWZSyz/3ADkjfwGo1V7PYwnPoc8MovZ2Dll18cjRzgAUnsDy5hYE24NwwpPyRrNJNuOcOSZxtx7MCk2kG6JQzfRyM5Qooix2lmsjxH9qdqIEX5TTRrGR6OQcoEZlwRSp/5BC/GjEYdI+whVfltYgfX0sXgH0CgiKh/fB3D7ck4thoQqHbS2kFGP2YyUi6w0OyUpW1rGG73x3HgwIJ98AGhU0cZ/Rhkf2oNsNLGYsC2YwwvkAMcQaTZ6TQfjzK8QfazcSDCdTiRajXD++cjUOzsgaKG3tz/uZLhHq4/PT9QVTt3NtmB1QwxI3EDnIChzeNzvLMrGd7fmoriCEyVH/P9Qyx3cP2KAJITDq9iuD8SxREkdT/C6j+Yjup3A0nOTQ8zPJiIyds6gaQCDY8wvJk4HcHOGyS1XbqC4f50jNL2IMWmwlKGd3cmItjmknn92VcwvL2F6ZeqKX37bszbv98HwU5mdfNlncfw4FYf3kSpg887aqQ3T1lW/u2dPnLk8/nKLmMoW9nDVjZfyomTzjdl1BtWcAYA+zylpGY4ONYEOc5u2evMs5a1QoHU+9I4ZXKwpcU98tgDDufc1s0re9YGdZYta5A1u5dbvlpgReOdp6JHNgc7fpCtnUO20ply5UfG/wEFXaai/lOVTwAAAABJRU5ErkJggg=="
+                                alt="웨일" width="48" height="48"></a>
+                        <div class="service_info"><strong class="title">웨일 브라우저</strong><a target="_blank"
+                                href="http://whale.naver.com/" class="dsc">이용안내</a></div>
+                    </div>
+                    <div class="service_box"><a target="_blank"
+                            href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%BD%83"
+                            class="service_logo"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABkCAMAAAA47XeXAAAAgVBMVEUAAADN5PdGm99Gm99Gm99Gm99Gm95Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gm99Gmt9Gm99Gm99Gm99Gm95Gm99Gm99Gm95Gm99Hm99Gm99Gm9/////3+/5cp+LO5PfR5/fO5fdcp+P7/f/zv5GhAAAAInRSTlMA/v7vH9u5qJNgGwb6l8a9uqF9WFUyLxYMCtbVmLCwe4OCj8gzEgAAA0NJREFUaN7NmmFz4iAQhkkwMTHGWrWtWvWuq8mF+/8/8Ey2nb0OhSwQZnw+MHQ7pbjAy2s2gsuiLPJMLpcyy4tyISZltnmHbxw3MzEVr/MUNNL5q5iCt2ccXCN9fhPB7CQYkTsRRlWDlboSAexzGCHfC28OKxhldfDOzBMwePLNTw0sauHFFphshQcLCUwkaQRfXYBPSkrEUBdv3jezcXXhw1ciUhc+fCUidQlH7qzqEk5d2dQlnHxvU5dwVgdXdSGclaiGyamt6hLO1qIu4ZASzcFE092SBprk1jagulvXAAw/qb5N7m176xQYmOPoLymYaK/X65/PNhlagE6LGUhfRM8FjNzuf/73//bHmInzoJEpjMyeWpp9RzGz/PT6+QvMNO2Q+67PPeYZY5h7jDVg5OM+/BGikd13JfDAj/Ad1WLMyEyUwKPT00ypN1GKAljQJtFiFgqRe86eYhbWIvPPPR5d+9pKiIgUwKNJdHXBvW9jyRye1EWLWYfnJcd141Byspizz7gbUyWDuqiW0v15D9g3ZgF86JwyKUgUHJaATUmS5rsEdkkTZLjZS8Alw+skFr8Nl6H6uosShaKOp3Zo+/jgFTDe+wcSfv0yFGfQaLX7tDO0reXOPRuMCG4Q11Y3IiYblWgzS7R+h31qdRtlGB7zikeUckz+AB3a8FuMqD7Cd2nhUHLOEIkLubQIkEuLxIdwEwUy3HyXxsbgPMJcGuGox+TSIugxuTQ+KHIaAS5N92eIIuMT5tJoPfHy5q9yKoXLelLuKRri0mjMQdhwTPw6Sv8pzKXhFyhNilEwkSCXRrnAnaPnJdyl0UrqXircpeHVglnv+62K4NJo3lFcGmWd79KO7OQoXAE8XNO6tIQGxj7fpfHTwk8RubQLWEGvgTNGKzj01fixunCMCCYcvSSlaFwUyKVx86J3bczpUR3zimq1LqdosAUbJF54ar+uk5Gju436mPTk8ZAXFdO93HRYTesUVgf3B+y0XdxLfdVputmfKp/iBtNjyl3c0kzUwtJIWewIPvAL9LOyWLsV9WAps3VRzh6hJBm3oOqsRKfHLGYzS/GP+iLBuBKdqkd+iWPkFZTHf4Em4us/uhI5qss/6zK5u8+AXpwAAAAASUVORK5CYII="
+                                alt="꽃" width="47" height="50"></a>
+                        <div class="service_info"><strong class="title">프로젝트 꽃</strong><a target="_blank"
+                                href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=1&amp;ie=utf8&amp;query=%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EA%BD%83"
+                                class="dsc">바로가기</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="corp_area">
+                <h3 class="blind">네이버 정책 및 약관</h3>
+                <ul class="list_corp">
+                    <li class="corp_item"><a target="_blank" href="https://www.navercorp.com/">회사소개</a></li>
+                    <li class="corp_item"><a target="_blank" href="https://recruit.navercorp.com/">인재채용</a></li>
+                    <li class="corp_item"><a target="_blank"
+                            href="https://www.navercorp.com/naver/proposalGuide">제휴제안</a></li>
+                    <li class="corp_item"><a target="_blank" href="https://www.naver.com/policy/service.html">이용약관</a>
+                    </li>
+                    <li class="corp_item"><a target="_blank"
+                            href="https://www.naver.com/policy/privacy.html"><strong>개인정보처리방침</strong></a></li>
+                    <li class="corp_item"><a target="_blank"
+                            href="https://www.naver.com/policy/youthpolicy.html">청소년보호정책</a></li>
+                    <li class="corp_item"><a target="_blank"
+                            href="https://policy.naver.com/policy/service_group.html">네이버 정책</a></li>
+                    <li class="corp_item"><a target="_blank" href="https://help.naver.com/">고객센터</a>
+                    </li>
+                </ul>
+                <address class="addr"><a target="_blank" href="https://www.navercorp.com/">ⓒ NAVER Corp.</a></address>
+            </div>
+        </div>
+    </div>
+</div>
