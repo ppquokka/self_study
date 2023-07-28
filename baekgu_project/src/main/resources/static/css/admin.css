@@ -1,0 +1,159 @@
+.member_table {
+    margin: 10px auto 20px auto;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+
+    padding: 10px;
+}
+
+.table_first {
+    background-color: whitesmoke;
+}
+
+.member_table_head {
+    border-bottom: 1px solid #000;
+    padding: 8px;
+  }
+  
+  .member_table_head:first-child {
+    border-left: none;
+  }
+  
+  .member_table_head:last-child {
+    border-right: none;
+  }
+  
+  .member_list_body tr:last-child td {
+    border-bottom: none;
+  }
+
+.admin_subject {
+position: fixed;
+}
+
+.search_bar {
+    margin-top: 50px;
+    position: relative;
+    width: 300px;
+}
+
+.search_box {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+
+}
+
+
+input {
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 10px;
+    
+}
+
+.search_img {
+    position: absolute;
+    width: 20px;
+    top: 0px;
+    right: 40px;
+    transform: translateY(60%);
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.page_button {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 5px;
+    border: none;
+    background-color: #b3d9eb;
+    cursor: pointer;
+}
+
+.page_button2{
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0px;
+    padding: 5px 5px;
+    border: none;
+    background-color: #b3d9eb;
+    cursor: pointer;
+}
+
+td {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.modal-table {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid black;
+    justify-content: center;
+
+}
+
+.small_font {
+    font-size: small;
+}
+
+.table_row_apply {
+
+        width: 80%;
+        border-top: 1px solid #444444;
+        border-collapse: collapse;
+}
+
+.table_row_apply td {
+    
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+}
+
+.table_headline {
+
+    background-color: whitesmoke;
+    font-weight: bold;
+
+}
+
+.deletebtn {
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 5px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.searchbtn {
+    border: none;
+    display: inline-block;
+    padding: 13px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color:  #78998d !important;
+    color: whitesmoke !important;
+}
+
+.searchbtn:hover {
+    background-color: #1e6b7b !important;
+    transition: 0.7s;
+}
+

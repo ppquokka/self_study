@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PetDiary">  
+
+<!-- 검색 : NAME --> 
+	<select id="selectSearch" parameterType="Map" resultType="Map">
+        SELECT PARENT_COMMON_CODE_ID, COMMON_CODE_ID, NAME 
+        FROM db_petaidry.commons_code
+        where PARENT_COMMON_CODE_ID = 'System_Code_YN'
+        <choose>
+            <when test="search == 'NAME'">
+            <![CDATA[
+            and NAME > #{words} 
+            ]]>
+            </when>
+            <when test="search == 'CAR_NAME'">
+            and NAME like CONCAT(#{words}, '%')
+            </when>
+        </choose>
+        ;
+	</select>
+
+<!-- hashMap에서 get으로 뽑아올 수 있음.컬렉션에는 결과적으로 list가 들어감 -->
+	<select id="selectInUID" parameterType="Map" resultType="Map">
+        SELECT PARENT_COMMON_CODE_ID, COMMON_CODE_ID, NAME 
+        FROM db_petaidry.commons_code
+        where 1 = 1
+        WHERE COMMON_CODE_ID IN 
+        <!-- item이란 변수이름은 작성자 마음대로 작성하면 됨 -->
+        <foreach item="COMMON_CODE_ID" index="index" collection="COMMON_CODE_ID_LIST"
+            open="(" separator="," close=")" nullable="true">
+            #{COMMON_CODE_ID}
+            </foreach>
+        ;
+	</select>
+
+<!-- 전체 : 로그인 후 My Diary 창?? --> 
+	<select id="selectAll" parameterType="Map" resultType="Map">
+        SELECT * 
+        FROM db_petaidry.commons_code
+        where 1 = 1 
+	</select>
+
+<!-- 상세 --> 
+	<select id="selectByUID" parameterType="Map" resultType="Map">
+        SELECT * 
+        FROM db_petaidry.commons_code
+        where COMMON_CODE_ID = #{COMMON_CODE_ID} 
+	</select>
+
+<!-- 입력 : 반려동물 기본정보?? -->
+    <insert id="insert" parameterType="Map">
+        insert into commons_code
+    <!-- 반려동물 명, 데려온 날짜, 성별, 중성화 여부, 접종일자 등등?? -->
+        (NAME, REGISTRY_DATE, DESCRIPTION, USE_YN, MODIFY_DATE)
+        values
+        (#{NAME}, #{REGISTRY_DATE}, #{DESCRIPTION}, #{USE_YN}, #{MODIFY_DATE})
+	</insert>
+
+    
+<!-- 수정 -->
+    <update id="update" parameterType="Map">
+        update commons_code
+        set NAME = #{NAME}
+        where COMMON_CODE_ID = #{COMMON_CODE_ID}
+    </update>
+
+<!-- 삭제 -->
+    <delete id="delete" parameterType="Map">
+        delete from commons_code
+        where COMMON_CODE_ID = #{COMMON_CODE_ID}
+    </delete>
+
+
+    <select id="TelecomSearchAll" parameterType="Map" resultType="Map">
+        SELECT * FROM animal_try.telecom;
+        </select>
+
+
+</mapper>

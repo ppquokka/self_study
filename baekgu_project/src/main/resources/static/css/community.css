@@ -1,0 +1,35 @@
+/* 수정 사항 추가 */
+.community
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pagination
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 20px 20px;
+}
+
+.dropdown_nav-item
+{
+    cursor: pointer;
+}
+
+.community_title
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.subjact a
+{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Community">
+
+	<select id="selectSearch" parameterType="Map" resultType="Map">
+        SELECT WRITINGGROUP_NAME, TITLE, ID, DATE_FORMAT(DATEOFPREPARATION, '%Y-%m-%d')
+        FROM ((COMMUNITY_LIST
+        INNER JOIN WRITING_GROUP
+        ON COMMUNITY_LIST.WRITINGGROUP_ID = WRITING_GROUP.WRITINGGROUP_ID)
+        INNER JOIN MEMBER
+        ON COMMUNITY_LIST.MEMBER_ID = MEMBER.MEMBER_ID)
+        WHERE 1 = 1 
+        ORDER BY DATEOFPREPARATION DESC
+        <choose>
+            <when test="search == 'YEAR'">
+            <![CDATA[and YEAR > #{words}]]>
+            </when>
+            <when test="search == 'TITLE'">
+            and TITLE like CONCAT(#{words}, '%')
+            </when>
+        </choose>        
+        ;
+	</select>
+
+	<select id="selectSearchWithPagination" parameterType="Map" resultType="Map">
+        SELECT WRITINGGROUP_NAME, TITLE, ID , DATE_FORMAT(DATEOFPREPARATION, '%Y-%m-%d')
+        FROM ((COMMUNITY_LIST
+        INNER JOIN WRITING_GROUP
+        ON COMMUNITY_LIST.WRITINGGROUP_ID = WRITING_GROUP.WRITINGGROUP_ID)
+        INNER JOIN MEMBER
+        ON COMMUNITY_LIST.MEMBER_ID = MEMBER.MEMBER_ID)
+        WHERE 1 = 1 
+        <choose>
+            <when test="search == 'TITLE'">
+                and TITLE like CONCAT('%', #{words}, '%')
+            </when>
+            <when test="search == 'ID'">
+                and ID like CONCAT('%', #{words}, '%')
+            </when>
+        </choose> 
+        ORDER BY DATEOFPREPARATION DESC
+        limit #{pageBegin}, #{pageScale};
+	</select>
+
+    <!-- total count -->
+	<select id="selectTotal" parameterType="Map" resultType="int">
+        SELECT COUNT(*)
+        FROM COMMUNITY_LIST
+        INNER JOIN MEMBER
+        ON COMMUNITY_LIST.MEMBER_ID = MEMBER.MEMBER_ID
+        WHERE 1 = 1
+        <choose>
+            <when test="search == 'TITLE'">
+                and TITLE like CONCAT('%', #{words}, '%')
+            </when>
+            <when test="search == 'ID'">
+                and ID like CONCAT('%', #{words}, '%')
+            </when>
+        </choose> 
+	</select>
+
+</mapper>

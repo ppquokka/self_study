@@ -1,0 +1,18 @@
+.loginButton
+{
+    line-height: 30px;
+}
+
+.error
+{
+    font-size: 12px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.loginform
+{
+    height: 10px;
+}

@@ -1,0 +1,58 @@
+.accountBox
+{
+    border-radius: 20px 20px 0 0;
+    background-color: #9ab8e6;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 1px black;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.accountEndBox
+{
+    border-radius: 0 0 20px 20px;
+    background-color: #9ab8e6;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 1px black;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.accountLine
+{
+    line-height: 50px;
+}
+
+.modalBox
+{
+    border-radius: 20px 20px 0 0;
+    background-color: #c6ddff;
+    font-size: 25px;
+    color: gray;
+    text-shadow: 0 0 1px black;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.modalEndBox
+{
+    border-radius: 0 0 20px 20px;
+    background-color: #c6ddff;
+    font-size: larger;
+    font-weight: bolder;
+    text-shadow: 0 0 1px black;
+    width: 500px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}

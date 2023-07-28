@@ -1,0 +1,107 @@
+.btn2 {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.btn3 {
+    border-radius: 5px;
+}
+
+
+.stat2 {
+    background-color: rgb(15, 30, 30);
+}
+
+.stat_footer {
+    background-color: rgb(75, 83, 41);
+}
+
+.button_box
+.button_revise {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.button_box form
+.button_revise form{
+    margin: 0 30px;
+}
+
+.btn1 {
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color:  #77af9c !important;
+    color: whitesmoke !important;
+}
+
+.btn2 {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.btnR 
+.btnD {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.btnR 
+.btnD {
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color:  #77af9c;
+    color: whitesmoke;
+}
+
+.btn1:hover {
+    background-color: #1e6b7b !important;
+    transition: 0.7s;
+}
+
+.btnR:hover 
+.btnD:hover {
+    background-color: #1e6b7b;
+    transition: 0.7s;
+}
+
+.btn2 {
+    border: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color:#b3d9eb;
+    color:#1e6b7b;
+}
+
+
+.table_title {
+    font-size: 20px;
+}
+
+.maincontainer {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.body {
+    align-items: center;
+}

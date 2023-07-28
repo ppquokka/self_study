@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Member">
+
+	<select id="selectByUID" parameterType="Map" resultType="Map">
+        SELECT * 
+        FROM MEMBER
+        where ID = #{ID}
+	</select>
+    
+    <insert id="create" parameterType="Map">
+    INSERT INTO MEMBER
+    (ID, PW, EMAIL, NAME, GENDER_ID, BIRTHDATE, TELECOM_ID, PHONENUM, MEMBER_ID)
+    values
+    (#{ID}, #{PW}, #{EMAIL}, #{NAME}, #{GENDER_ID}, #{BIRTHDATE}, #{TELECOM_ID}, #{PHONENUM}, #{MEMBER_ID}); 
+    </insert>
+
+    <update id="change" parameterType="Map">
+    UPDATE MEMBER
+    SET NAME = '', UNIQUE_ID = '', EMAIL = '', BIRTHDATE = '', TELECOM_ID = ''
+    WHERE
+    MEMBER_ID = '';
+    </update>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AdminMapper">  
+
+
+
+<!-- 회원 리스트 -->
+<select id = "selectTotal" parameterType = "Map" resultType = "Map">
+<choose>
+<when test = "find_membername != NULL and find_membername != ''">
+SELECT NAME, ID, PW, EMAIL, MEMBER_ID, PHONENUM
+FROM member
+WHERE NAME LIKE CONCAT("%", #{find_membername}, "%")
+</when>
+<otherwise>
+SELECT NAME, ID, PW, EMAIL, MEMBER_ID, PHONENUM
+FROM member
+</otherwise> 
+ </choose>
+</select> 
+
+
+
+<!-- 애완동물 현황 -->
+<select id = "selectAnimal" parameterType = "Map" resultType = "Map">
+
+SELECT FIRST.NAME, species.SPECIES_NAME, FIRST.AGE
+FROM
+(SELECT pet_information.PETNAME AS NAME, pet_information.SPECIES_ID AS SPE, pet_information.PETAGE AS AGE
+FROM pet_information
+INNER JOIN member ON pet_information.MEMBER_ID = member.MEMBER_ID
+AND pet_information.MEMBER_ID = #{memberId}) AS FIRST
+INNER JOIN species ON FIRST.SPE = species.SPECIES_ID;
+
+</select>
+
+<!-- 회원 검색 -->
+<select id = "selectSearch" parameterType = "Map" resultType = "Map">
+SELECT NAME, ID, PW, EMAIL
+FROM member
+WHERE NAME LIKE CONCAT(#{NAME}, '%')
+</select>
+</mapper>

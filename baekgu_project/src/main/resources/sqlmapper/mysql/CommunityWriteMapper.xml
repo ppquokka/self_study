@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="CommunityWrite">  
+
+
+
+<!-- 상세 : 분류 선택 --> 
+	<select id="selectByUID_CW" parameterType="Map" resultType="Map">
+        SELECT * 
+        FROM writing_group
+        where  WRITINGGROUP_ID = #{WRITINGGROUP_ID} 
+	</select>
+
+
+<!-- 입력 : 커뮤니티 글 작성 및 등록 -->
+    <insert id="insert_CW" parameterType="Map">
+    <!-- 우선 'community_write, writing_group, MEMBER' 테이블 3개 JOIN -->
+        <!-- SELECT community_write.*, writing_group.*, member.*
+        FROM (community_write
+        INNER JOIN writing_group ON community_write.WRITINGGROUP_NAME = writing_group.WRITINGGROUP_NAME)
+        INNER JOIN member ON community_write.MEMBER_ID = member.MEMBER_ID; -->
+    <!-- 커뮤니티 글_UNIQUEID, 분류, 제목, 내용, 작성자, 작성일 -->
+        INSERT INTO community_write (COMWRITE_ID, WRITINGGROUP_NAME, TITLE, CONTENT, MEMBER_ID, DATEOFPREPARATION)           
+        VALUES (#{COMWRITE_ID}, #{WRITINGGROUP_NAME}, #{TITLE}, #{CONTENT}, #{MEMBER_ID}, NOW())
+	</insert>
+
+    
+<!-- 수정 -->
+    <update id="update_CW" parameterType="Map">
+        update community_write 
+        SET MEMBER_ID = #{MEMBER_ID}
+        where COMWRITE_ID = #{COMWRITE_ID}
+    </update>
+
+<!-- 삭제 -->
+    <delete id="delete_CW" parameterType="Map">
+        DELETE FROM community_write
+        WHERE COMWRITE_ID = #{COMWRITE_ID}
+    </delete>
+
+<!-- 전체 -->
+    <select id="selectAll_CW" parameterType="Map" resultType="Map">
+        SELECT *
+        FROM COMMUNITY_LIST
+        where 1 = 1 ;
+    </select>
+
+<!-- Mapper.xml -->
+    <select id="selectInUID_CW" parameterType="Map" resultType="Map">
+        SELECT * 
+        FROM community_write
+        WHERE 1 = 1
+        and COMWRITE_ID in
+    <foreach item="COMWRITE_ID" index="index" collection="COMWRITE_ID"
+            open="(" separator="," close=")" nullable="true">
+            #{COMWRITE_ID}
+    </foreach>
+        ;
+    </select>
+
+<!-- insert_CW 후 community_list page 보기 -->
+    <select id="insertAndView_CW" parameterType="Map" resultType="Map"> 
+    SELECT * 
+    FROM community_write;
+    </select>
+   
+    <select id="insertAndView_CL" parameterType="Map" resultType="Map"> 
+    SELECT * 
+    FROM community_list;
+    </select>
+
+</mapper>

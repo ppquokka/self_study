@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MemberManage">
+   
+   <!-- <mapper namespace="MemberManage"> -->
+<!-- com.example.baekgu_project.dao.SharedDao -->
+
+    <insert id="newpetinsert" parameterType="Map">
+    INSERT INTO pet_information(PETINF_ID, MEMBER_ID, SPECIES_ID, PETGEN_ID, PETNAME, PETAGE)
+    VALUES(#{PETINF_ID}, #{MEMBER_ID}, #{SPECIES_ID}, #{PETGEN_ID}, #{PETNAME}, #{PETAGE});
+    </insert>
+
+</mapper>

@@ -1,0 +1,48 @@
+.loginLocation
+{
+    display: flex;
+    justify-content: end;
+}
+
+.loginText
+{
+    font-weight: bold;
+    color: grey;
+}
+
+.headerAddress
+{
+    color: grey;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.mainImage
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footerText
+{
+    font-size: smaller;
+}
+
+.grayText
+{
+    color: gray;
+}
+
+.mainform
+{
+    background-color: transparent;
+    color: gray;
+    border: none;
+    font-weight: bold;
+}
+
+.myName
+{
+    line-height: 40px;
+    font-weight: bold;
+}

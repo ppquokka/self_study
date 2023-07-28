@@ -1,0 +1,14 @@
+.introduceImage
+{
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+.introduceText
+{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 100px;
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 50px;
+}

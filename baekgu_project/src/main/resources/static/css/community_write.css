@@ -1,0 +1,104 @@
+.content-section
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content-title
+{
+    color: white;
+    background-color: #b3d9eb;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-select
+{
+    color: white;
+    background-color: #b3d9eb;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+
+.navbar-name
+{
+    background-color: #b3d9eb;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.input-title-field
+{
+    width: 100%;
+    border: none;
+    background-color: #b3d9eb;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.textarea-box
+{
+    background-color: #b3d9eb;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.textarea-field
+{
+    width: 100%;
+    border: none;
+    background-color: #b3d9eb;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.footer-buttons
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-button, .cancel-button
+{
+    background-color: #3d75ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none; 
+}
+
+.cancel-button
+{
+    background-color: gray;
+}
+
+.footer-row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 100px; */
+}
+
+.footer-column
+{
+    flex: 1;
+    text-align: center;
+}
